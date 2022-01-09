@@ -1,0 +1,9 @@
+image: voegelas/perl-devel-cover
+
+before_script:
+  - cpanm --quiet --notest --installdeps .
+
+test_job:
+  script:
+    - env HARNESS_PERL_SWITCHES=-MDevel::Cover prove -l
+    - cover -select_re ^lib/
