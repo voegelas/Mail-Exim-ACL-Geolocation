@@ -32,10 +32,7 @@ of the following database files:
 
 ## INSTALLATION
 
-The [Open Build Service](https://build.opensuse.org/package/show/home:voegelas/perl-Mail-Exim-ACL-Geolocation)
-provides binary and source packages.
-
-Run the following commands to install the software manually:
+Run the following commands to install the software:
 
     perl Makefile.PL
     make
