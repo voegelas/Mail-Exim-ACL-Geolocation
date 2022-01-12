@@ -17,18 +17,18 @@ Requires the Perl module IP::Geolocation::MMDB from CPAN and the modules
 Exporter and List::Util, which are distributed with Perl.
 
 Requires an IP to country database in the MaxMind DB file format from
-[DP-IP.com](https://db-ip.com/) or [MaxMind](https://www.maxmind.com).  The
+[MaxMind](https://www.maxmind.com) or [DP-IP.com](https://db-ip.com/).  The
 module searches the directories "/var/lib/GeoIP" and "/usr/share/GeoIP" for one
 of the following database files:
 
-* dbip-country.mmdb
 * GeoIP2-Country.mmdb
-* dbip-location.mmdb
 * GeoIP2-City.mmdb
-* dbip-country-lite.mmdb
+* dbip-country.mmdb
+* dbip-location.mmdb
 * GeoLite2-Country.mmdb
-* dbip-city-lite.mmdb
 * GeoLite2-City.mmdb
+* dbip-country-lite.mmdb
+* dbip-city-lite.mmdb
 
 ## INSTALLATION
 
