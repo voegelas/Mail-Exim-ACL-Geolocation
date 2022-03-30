@@ -67,9 +67,9 @@ version 1.001
 
 =head1 DESCRIPTION
 
-A Perl module for the L<Exim|https://www.exim.org/> mailer that maps IP
-addresses to two-letter country codes such as "DE", "FR" and "US".
-SpamAssassin can use these country codes to filter junk email.
+A Perl module for the Exim mailer that maps IP addresses to two-letter country
+codes such as "DE", "FR" and "US".  SpamAssassin can use these country codes
+to filter junk email.
 
 =head1 SUBROUTINES/METHODS
 
