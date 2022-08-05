@@ -5,5 +5,5 @@ before_script:
 
 test_job:
   script:
-    - env HARNESS_PERL_SWITCHES=-MDevel::Cover prove -l
-    - cover -select_re ^lib/
+    - perl Makefile.PL
+    - cover -test
