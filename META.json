@@ -58,13 +58,13 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://gitlab.com/voegelas/mail-exim-acl-geolocation/-/issues"
+         "web" : "https://github.com/voegelas/Mail-Exim-ACL-Geolocation/issues"
       },
-      "homepage" : "https://gitlab.com/voegelas/mail-exim-acl-geolocation",
+      "homepage" : "https://github.com/voegelas/Mail-Exim-ACL-Geolocation/wiki",
       "repository" : {
          "type" : "git",
-         "url" : "https://gitlab.com/voegelas/mail-exim-acl-geolocation.git",
-         "web" : "https://gitlab.com/voegelas/mail-exim-acl-geolocation/-/tree/main"
+         "url" : "https://github.com/voegelas/Mail-Exim-ACL-Geolocation.git",
+         "web" : "https://github.com/voegelas/Mail-Exim-ACL-Geolocation"
       }
    },
    "version" : "1.002",
