@@ -15,32 +15,32 @@ use List::Util qw(first);
 our @EXPORT_OK = qw(country_code);
 
 our @DIRECTORIES = qw(
-  /var/lib/GeoIP
-  /usr/share/GeoIP
+    /var/lib/GeoIP
+    /usr/share/GeoIP
 );
 
 our @DATABASES = qw(
-  GeoIP2-Country.mmdb
-  GeoIP2-City.mmdb
-  dbip-country.mmdb
-  dbip-location.mmdb
-  GeoLite2-Country.mmdb
-  GeoLite2-City.mmdb
-  dbip-country-lite.mmdb
-  dbip-city-lite.mmdb
+    GeoIP2-Country.mmdb
+    GeoIP2-City.mmdb
+    dbip-country.mmdb
+    dbip-location.mmdb
+    GeoLite2-Country.mmdb
+    GeoLite2-City.mmdb
+    dbip-country-lite.mmdb
+    dbip-city-lite.mmdb
 );
 
 our $DATABASE = $ENV{IP_GEOLOCATION_MMDB} || first {-r} map {
-  my $dir = $_;
-  map {"$dir/$_"} @DATABASES
+    my $dir = $_;
+    map {"$dir/$_"} @DATABASES
 } @DIRECTORIES;
 
 our $MMDB = eval { IP::Geolocation::MMDB->new(file => $DATABASE) };
 
 sub country_code {
-  my $ip_address = shift;
+    my $ip_address = shift;
 
-  return eval { $MMDB->getcc($ip_address) };
+    return eval { $MMDB->getcc($ip_address) };
 }
 
 1;
