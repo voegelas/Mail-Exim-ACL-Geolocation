@@ -155,6 +155,10 @@ one of the following database files:
 
 None.
 
+=head1 BUGS AND LIMITATIONS
+
+None known.
+
 =head1 SEE ALSO
 
 L<Mail::SpamAssassin::Conf>
@@ -162,10 +166,6 @@ L<Mail::SpamAssassin::Conf>
 =head1 AUTHOR
 
 Andreas Vögele E<lt>voegelas@cpan.orgE<gt>
-
-=head1 BUGS AND LIMITATIONS
-
-None known.
 
 =head1 LICENSE AND COPYRIGHT
 
