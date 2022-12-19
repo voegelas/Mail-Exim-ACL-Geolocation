@@ -18,12 +18,14 @@ Exporter and List::Util, which are distributed with Perl.
 
 Requires an IP to country database in the MaxMind DB file format from
 [MaxMind](https://www.maxmind.com) or [DP-IP.com](https://db-ip.com/).  The
-module searches the directories "/var/lib/GeoIP" and "/usr/share/GeoIP" for one
-of the following database files:
+module searches the directories "/var/lib/GeoIP", "/usr/local/share/GeoIP",
+"/usr/share/GeoIP" and "/opt/share/GeoIP" for one of the following database
+files:
 
 * GeoIP2-Country.mmdb
 * GeoIP2-City.mmdb
 * dbip-country.mmdb
+* dbip-city.mmdb
 * dbip-location.mmdb
 * GeoLite2-Country.mmdb
 * GeoLite2-City.mmdb

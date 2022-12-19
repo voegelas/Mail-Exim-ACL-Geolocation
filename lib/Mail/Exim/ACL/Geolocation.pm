@@ -16,13 +16,16 @@ our @EXPORT_OK = qw(country_code);
 
 our @DIRECTORIES = qw(
     /var/lib/GeoIP
+    /usr/local/share/GeoIP
     /usr/share/GeoIP
+    /opt/share/GeoIP
 );
 
 our @DATABASES = qw(
     GeoIP2-Country.mmdb
     GeoIP2-City.mmdb
     dbip-country.mmdb
+    dbip-city.mmdb
     dbip-location.mmdb
     GeoLite2-Country.mmdb
     GeoLite2-City.mmdb
@@ -139,12 +142,14 @@ L<Exporter> and L<List::Util>, which are distributed with Perl.
 
 Requires an IP to country database in the MaxMind DB file format from
 L<MaxMind|https://www.maxmind.com/> or L<DP-IP.com|https://db-ip.com/>.  The
-module searches the directories F</var/lib/GeoIP> and F</usr/share/GeoIP> for
-one of the following database files:
+module searches the directories F</var/lib/GeoIP>, F</usr/local/share/GeoIP>,
+F</usr/share/GeoIP> and F</opt/share/GeoIP> for one of the following database
+files:
 
   GeoIP2-Country.mmdb
   GeoIP2-City.mmdb
   dbip-country.mmdb
+  dbip-city.mmdb
   dbip-location.mmdb
   GeoLite2-Country.mmdb
   GeoLite2-City.mmdb
