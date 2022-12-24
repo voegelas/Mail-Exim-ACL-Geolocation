@@ -6,7 +6,7 @@ use 5.016;
 use warnings;
 use utf8;
 
-our $VERSION = 1.003;
+our $VERSION = 1.004;
 
 use Exporter qw(import);
 use IP::Geolocation::MMDB;
@@ -57,7 +57,7 @@ Mail::Exim::ACL::Geolocation - Map IP addresses to country codes
 
 =head1 VERSION
 
-version 1.003
+version 1.004
 
 =head1 SYNOPSIS
 
