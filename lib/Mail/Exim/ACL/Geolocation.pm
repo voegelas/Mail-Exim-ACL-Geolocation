@@ -19,6 +19,7 @@ our @DIRECTORIES = qw(
     /usr/local/share/GeoIP
     /usr/share/GeoIP
     /opt/share/GeoIP
+    /var/db/GeoIP
 );
 
 our @DATABASES = qw(
