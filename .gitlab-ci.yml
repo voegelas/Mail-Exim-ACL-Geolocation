@@ -8,11 +8,7 @@ test:
       when: never
     - when: always
   script:
+    - apt-get install -y libmaxminddb-dev
     - cpanm --quiet --notest --installdeps .
     - perl Makefile.PL
     - cover -test
-
-include:
-  - remote: 'https://mirror.andreasvoegele.com/gitlab/build-packages.yaml'
-    rules:
-      - if: $BUILD_PACKAGES == "true"
