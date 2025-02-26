@@ -6,7 +6,7 @@ use 5.016;
 use warnings;
 use utf8;
 
-our $VERSION = 1.004;
+our $VERSION = 1.005;
 
 use Exporter qw(import);
 use IP::Geolocation::MMDB;
@@ -100,7 +100,7 @@ Mail::Exim::ACL::Geolocation - Map IP addresses to location information
 
 =head1 VERSION
 
-version 1.004
+version 1.005
 
 =head1 SYNOPSIS
 
@@ -235,7 +235,7 @@ Andreas Vögele E<lt>voegelas@cpan.orgE<gt>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (C) 2022 Andreas Vögele
+Copyright (C) 2025 Andreas Vögele
 
 This module is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
