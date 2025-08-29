@@ -16,14 +16,13 @@ jobs:
 
     container:
       image: voegelas/debian-devel
+      options: --user root
 
     steps:
-      - uses: actions/checkout@v4
-      - name: perl -V
-        run: perl -V
+      - uses: actions/checkout@v5
       - name: Install dependencies
         run: |
-          apt-get install -y libmaxminddb-dev
+          sudo apt-get install -y libmaxminddb-dev
           cpanm --quiet --notest --installdeps .
       - name: Run tests
         env:
